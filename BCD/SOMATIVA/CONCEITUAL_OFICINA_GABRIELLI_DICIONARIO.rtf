@@ -1,0 +1,236 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil MS Sans Serif;}{\f1\fnil\fcharset0 MS Sans Serif;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\b\f0\fs16 001 - Atributo: \cf2\b0 Ano_de_fabrica\f1\'e7\'e3o\cf1\b 
+\par \cf0\b0\f0 Ano_de_fabrica\f1\'e7\'e3o
+\par tipo: int not null
+\par \f0 
+\par \cf1\b 002 - Atributo: \cf2\b0 Atributo_14\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 003 - Atributo: \cf2\b0 Atributo_16\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 004 - Atributo: \cf2\b0 Atributo_24\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 005 - Atributo: \cf2\b0 Atributo_34\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 006 - Atributo: \cf2\b0 Atributo_35\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 007 - Atributo: \cf2\b0 Bom\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 008 - Atributo: \cf2\b0 CNPJ\cf1\b 
+\par \cf0\b0 CNPJ
+\par tipo: int not null
+\par 
+\par \cf1\b 009 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 CPF
+\par tipo:varchar (14) not null unique
+\par 
+\par \cf1\b 010 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 011 - Atributo: \cf2\b0 Cargo\cf1\b 
+\par \cf0\b0 Cargo
+\par tipo: varchar(30)
+\par 
+\par \cf1\b 012 - Entidade: \cf2\b0 Clientes\cf1\b 
+\par \cf0\b0 fun\f1\'e7\'e3o: armazena dados do cliente
+\par \f0 
+\par \cf1\b 013 - Rela\f1\'e7\'e3o: \cf2\b0 Conversa_com\cf1\b 
+\par \cf0\b0\f0 Conversa entre cliente e funcion\f1\'e1rio
+\par cardinalidade: (1,n) (1,n)
+\par \f0 
+\par \cf1\b 014 - Atributo: \cf2\b0 Data_abertura\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 015 - Atributo: \cf2\b0 Data_cadastro\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 016 - Atributo: \cf2\b0 Data_da_fabrica\f1\'e7\'e3o\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 017 - Atributo: \cf2\b0 Data_de_cada_servi\f1\'e7o\cf1\b 
+\par \cf0\b0\f0 Data_de_cada_servi\f1\'e7o
+\par tipo: date not null
+\par \f0 
+\par \cf1\b 018 - Atributo: \cf2\b0 Data_de_nascimento\cf1\b 
+\par \cf0\b0 Data_de_Nascimento
+\par tipo: int not null 
+\par \cf1\b 019 - Atributo: \cf2\b0 Data_de_nascimento\cf1\b 
+\par \cf0\b0 Data_de_nascimento
+\par tipo: date not null
+\par 
+\par \cf1\b 020 - Atributo: \cf2\b0 Data_do_pagamento\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 021 - Atributo: \cf2\b0 Data_fechamento\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 022 - Atributo: \cf2\b0 Documenta\f1\'e7\'e3o_do_veiculo\cf1\b 
+\par \cf0\b0\f0 Documenta\f1\'e7\'e3o_do_veiculo
+\par varchar(90) not null unique
+\par \f0 
+\par \cf1\b 023 - Atributo: \cf2\b0 Email\cf1\b 
+\par \cf0\b0 Email
+\par tipo: varchar(100)
+\par 
+\par \cf1\b 024 - Atributo: \cf2\b0 Email_do_cliente\cf1\b 
+\par \cf0\b0 Email_do_cliente
+\par tipo: varchar(50) 
+\par \cf1\b 025 - Atributo: \cf2\b0 Estado_do_veiculo\cf1\b 
+\par \cf0\b0 Estado_do_veiuclo
+\par tipo: Estado_do_veiculo enum ('Bom') , ('Ruim') not null
+\par 
+\par \cf1\b 026 - Atributo: \cf2\b0 Forma_de_pagamento\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 027 - Entidade: \cf2\b0 Fornecedores\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 028 - Rela\f1\'e7\'e3o: \cf2\b0 Fornecem\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 029 - Entidade: \cf2\b0 Funcionarios\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 030 - Atributo: \cf2\b0 ID_Cliente\cf1\b 
+\par \cf0\b0 ID_Cliente
+\par tipo: int auto_increment primary key
+\par 
+\par \cf1\b 031 - Atributo: \cf2\b0 ID_Fornecedores\cf1\b 
+\par \cf0\b0 ID_Fornecedores
+\par tipo: int auto_increment primary key 
+\par \cf1\b 032 - Atributo: \cf2\b0 ID_Funcionarios\cf1\b 
+\par \cf0\b0 ID_Funcionarios
+\par tipo: int auto_increment primary key
+\par 
+\par \cf1\b 033 - Atributo: \cf2\b0 ID_Marca\cf1\b 
+\par \cf0\b0 ID_Marca
+\par tipo: int auto_increment primary key 
+\par \cf1\b 034 - Atributo: \cf2\b0 ID_Modelos\cf1\b 
+\par \cf0\b0 ID_Modelos
+\par tipo: int auto_increment primary key
+\par 
+\par \cf1\b 035 - Atributo: \cf2\b0 ID_Pagamentos\cf1\b 
+\par \cf0\b0 ID_Pagamentos
+\par tipo: int auto_increment primary key
+\par 
+\par \cf1\b 036 - Atributo: \cf2\b0 ID_Pe\f1\'e7as\cf1\b 
+\par \cf0\b0\f0 ID_Pe\f1\'e7as
+\par tipo: int auto_increment primary key
+\par \f0 
+\par \cf1\b 037 - Atributo: \cf2\b0 ID_Servi\f1\'e7os\cf1\b 
+\par \cf0\b0\f0 ID_Servi\f1\'e7os
+\par tipo: int auto_increment primary key
+\par \f0 
+\par \cf1\b 038 - Atributo: \cf2\b0 ID_Servi\f1\'e7os\cf1\b 
+\par \cf0\b0\f0 ID_Servi\f1\'e7os
+\par tipo: int auto_increment primary key
+\par \f0 
+\par \cf1\b 039 - Atributo: \cf2\b0 ID_Veiculos\cf1\b 
+\par \cf0\b0 ID_Veiculo
+\par tipo: int auto_increment primary key
+\par 
+\par \cf1\b 040 - Atributo: \cf2\b0 Localiza\f1\'e7\'e3o_da_Marca\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 041 - Entidade: \cf2\b0 Marca\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 042 - Atributo: \cf2\b0 Marcas_fornecedoras\cf1\b 
+\par \cf0\b0 Marcas_fornecedoras
+\par tipo: varchar(50) not null
+\par 
+\par \cf1\b 043 - Entidade: \cf2\b0 Modelos\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 044 - Atributo: \cf2\b0 Nome_da_marca\cf1\b 
+\par \cf0\b0 Nome_da_marca
+\par tipo: varchar (80) not null 
+\par 
+\par \cf1\b 045 - Atributo: \cf2\b0 Nome_da_marca\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 046 - Atributo: \cf2\b0 Nome_da_pe\f1\'e7a\cf1\b 
+\par \cf0\b0\f0 Nome_da_pe\f1\'e7a
+\par tipo: varchar (50) nt null \f0 
+\par \cf1\b 047 - Atributo: \cf2\b0 Nome_do_cliente\cf1\b 
+\par \cf0\b0 Nome_do_Cliente
+\par tipo: varchar(70) not null
+\par 
+\par \cf1\b 048 - Atributo: \cf2\b0 Nome_do_fornecedor\cf1\b 
+\par \cf0\b0 Nome_do_Fornecedor
+\par tipo: varchar(80) not null
+\par 
+\par \cf1\b 049 - Atributo: \cf2\b0 Nome_do_funcionario\cf1\b 
+\par \cf0\b0 Nome_do_funcionario
+\par tipo: varchar (80) not null
+\par 
+\par \cf1\b 050 - Atributo: \cf2\b0 Nome_do_modelo\cf1\b 
+\par \cf0\b0 Nome_do_modelo
+\par tipo:varchar(80) not null 
+\par \cf1\b 051 - Atributo: \cf2\b0 Nome_do_proprietario\cf1\b 
+\par \cf0\b0 Nome_do_proprietario
+\par tipo: varchar(70) not null
+\par 
+\par \cf1\b 052 - Atributo: \cf2\b0 Nome_dos_servi\f1\'e7os\cf1\b 
+\par \cf0\b0\f0 Nome_dos_servi\f1\'e7os
+\par tipo: varchar (60) not null
+\par \f0 
+\par \cf1\b 053 - Entidade: \cf2\b0 Ordens_de_servi\f1\'e7o\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 054 - Atributo: \cf2\b0 Origem_da_marca\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 055 - Entidade: \cf2\b0 Pagamentos\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 056 - Rela\f1\'e7\'e3o: \cf2\b0 Para\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 057 - Atributo: \cf2\b0 Peso_da_pe\f1\'e7a\cf1\b 
+\par \cf0\b0\f0 Peso_da_pe\f1\'e7a
+\par tipo:int not null \f0 
+\par \cf1\b 058 - Atributo: \cf2\b0 Peso_do_veiculo\cf1\b 
+\par \cf0\b0 Peso_do_veiculo
+\par tipo: int not null
+\par 
+\par \cf1\b 059 - Entidade: \cf2\b0 Pe\f1\'e7as\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 060 - Atributo: \cf2\b0 Pre\f1\'e7o_da_pe\'e7a\cf1\b 
+\par \cf0\b0\f0 Pre\f1\'e7o_da_pe\'e7a
+\par tipo: int not null
+\par \f0 
+\par \cf1\b 061 - Atributo: \cf2\b0 Pre\f1\'e7o_de_cada_servi\'e7o\cf1\b 
+\par \cf0\b0\f0 Pre\f1\'e7o_de_cada_servi\'e7o
+\par tipo: int not null
+\par \f0 
+\par \cf1\b 062 - Rela\f1\'e7\'e3o: \cf2\b0 Realiza\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 063 - Atributo: \cf2\b0 Ruim\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 064 - Atributo: \cf2\b0 Sal\f1\'e1rio\cf1\b 
+\par \cf0\b0\f0 Sal\f1\'e1rio
+\par tipo: decimal (5, 2) default 0.0
+\par \f0 
+\par \cf1\b 065 - Entidade: \cf2\b0 Servi\f1\'e7os\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 066 - Atributo: \cf2\b0 Tamanho_da_pe\f1\'e7a\cf1\b 
+\par \cf0\b0\f0 Tamanho_da_pe\f1\'e7a
+\par tipo: int not null
+\par \f0 
+\par \cf1\b 067 - Atributo: \cf2\b0 Telefone_do_cliente\cf1\b 
+\par \cf0\b0 Telefone_do_cliente
+\par tipo: int not null
+\par 
+\par \cf1\b 068 - Atributo: \cf2\b0 Telefone_para_contato\cf1\b 
+\par \cf0\b0 Telefone_para_contato
+\par tipo: varchar(15)
+\par 
+\par \cf1\b 069 - Atributo: \cf2\b0 Tipo_de_Pe\f1\'e7as\cf1\b 
+\par \cf0\b0\f0 Tipo_de_pe\f1\'e7as
+\par tipo: varchar(50) not null
+\par \f0 
+\par \cf1\b 070 - Atributo: \cf2\b0 Tipo_do_modelo\cf1\b 
+\par \cf0\b0 Tipo_do_modelo
+\par tipo: varchar(90) not null 
+\par \cf1\b 071 - Atributo: \cf2\b0 Valor_do_pagamento\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 072 - Atributo: \cf2\b0 Valor_total\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 073 - Rela\f1\'e7\'e3o: \cf2\b0 Verifica_os\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 074 - Entidade: \cf2\b0 Ve\f1\'edculos\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 075 - Atributo: \cf2\b0 cor_do_modelo\cf1\b 
+\par \cf0\b0 cor_do_modelo
+\par tipo: varchar (40)
+\par 
+\par \cf1\b 076 - Atributo: \cf2\b0 descri\f1\'e7\'e3o\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 077 - Atributo: \cf2\b0 status\cf1\b 
+\par \cf0\b0 
+\par 
+\par }
+ 
