@@ -62,3 +62,31 @@ CREATE TABLE Item_Pedido (
     FOREIGN KEY (ID_Produto) REFERENCES Produto(ID_Produto),
     FOREIGN KEY (ID_Fornecedor) REFERENCES Fornecedor(ID_Fornecedor)
 );
+
+
+
+
+-- DESAFIOS:
+
+-- QUESTÃO 1:
+-- CATEGORIA -- POSSUI -- PRODUTO
+-- 1,N E 1,1
+
+
+-- QUESTÃO 2:
+-- FUNCIONARIO---REGISTRA---PEDIDO
+-- 1,N E 1,1
+
+
+-- QUESTÃO 3:
+-- FORNECEDOR -- FORNECE -- PRODUTO
+-- 1,N E 1,N
+
+
+-- QUESTÃO 4:
+-- CLIENTE---RESERVA---MESSAGE_TEXT
+-- 0,N E 1,1
+
+-- QUESTÃO 5:
+-- PEDIDO---POSSUI---ITEM_PEDIDO
+-- 1,N E 1,1
